@@ -221,7 +221,19 @@ function BirthdayMessage() {
             </div>
           )}
 
-          
+          {showTextCards && (
+            <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 animate-gradient-x">
+              <button 
+                onClick={() => {
+                  setShowFullMessage(!showFullMessage);
+                  setIsConfettiActive(true);
+                }}
+                className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50"
+              >
+                {showFullMessage ? "Show Sections" : "Read Full Message"}
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
