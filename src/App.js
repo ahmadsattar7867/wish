@@ -129,20 +129,20 @@ function BirthdayMessage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       {!showCard ? (
         <button 
-          className="text-white text-2xl flex flex-col items-center space-y-4 bg-transparent border-4 border-pink-500 rounded-full p-8 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+          className="text-white text-2xl flex flex-col items-center space-y-4 bg-transparent border-4 border-pink-500 rounded p-8 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
           onClick={handleGiftClick}
         >
-          <FaGift className="text-6xl text-pink-500" />
-          <span>Click to open your gift</span>
+          <FaGift className="text-8xl text-pink-500" />
+          <span>Welcome To Ahmad's <br /> First Live Application</span>
         </button>
       ) : (
         <div className={`w-full max-w-4xl bg-gray-900 rounded-lg shadow-2xl overflow-hidden transition-all duration-500 ease-in-out transform ${showCard ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
           <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-6 animate-gradient-x">
-            <h1 className="text-4xl font-bold text-center text-white mb-2 animate-bounce">Happy Birthday, Aksa!</h1>
-            <p className="text-center text-lg text-white animate-pulse">A message from the heart on your special day</p>
+            <h1 className="text-8xl font-bold text-center text-white mb-2 animate-bounce">Aqsa The Butt</h1>
+            <p className="text-6xl text-center text-white animate-pulse">Happiest Birthday</p>
           </div>
           
           {showImageCards && (
@@ -166,11 +166,11 @@ function BirthdayMessage() {
           {showSecondGift && !showTextCards && (
             <div className="p-6 bg-gray-800 flex justify-center">
               <button 
-                className="text-white text-xl flex flex-col items-center space-y-4 bg-transparent border-4 border-pink-500 rounded-full p-6 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+                className="text-white text-xl flex flex-col items-center space-y-4 bg-transparent border-4 border-pink-500 rounded p-6 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
                 onClick={handleSecondGiftClick}
               >
                 <FaGift className="text-5xl text-pink-500" />
-                <span>Open your message</span>
+                <span>Idhar Click karkay <br /> apni Grettings bhi parhlo lol</span>
               </button>
             </div>
           )}
@@ -221,19 +221,7 @@ function BirthdayMessage() {
             </div>
           )}
 
-          {showTextCards && (
-            <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6 animate-gradient-x">
-              <button 
-                onClick={() => {
-                  setShowFullMessage(!showFullMessage);
-                  setIsConfettiActive(true);
-                }}
-                className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50"
-              >
-                {showFullMessage ? "Show Sections" : "Read Full Message"}
-              </button>
-            </div>
-          )}
+          
         </div>
       )}
     </div>
