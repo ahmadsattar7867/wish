@@ -69,10 +69,10 @@ const sections = [
 ];
 
 const imageCards = [
-  { src: "/placeholder.svg?height=200&width=200", alt: "Memory 1" },
-  { src: "/placeholder.svg?height=200&width=200", alt: "Memory 2" },
-  { src: "/placeholder.svg?height=200&width=200", alt: "Memory 3" },
-  { src: "/placeholder.svg?height=200&width=200", alt: "Memory 4" },
+  { src: "1.png", alt: "Memory 1" },
+  { src: "5.jpg", alt: "Memory 2" },
+  { src: "7.jpg", alt: "Memory 4" },
+  { src: "3.png", alt: "Memory 3" },
 ];
 
 function BirthdayMessage() {
