@@ -115,8 +115,8 @@ function BirthdayMessage() {
   const handleGiftClick = () => {
     setShowCard(true);
     setIsConfettiActive(true);
-    setTimeout(() => setShowImageCards(true), 3000);
-    setTimeout(() => setShowSecondGift(true), 8000);
+    setTimeout(() => setShowImageCards(true), 5000);
+    setTimeout(() => setShowSecondGift(true), 12000);
   };
 
   const handleSecondGiftClick = () => {
