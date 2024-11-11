@@ -123,9 +123,17 @@ function BirthdayMessage() {
     setShowTextCards(true);
     setIsConfettiActive(true);
   };
-
+//   function BackgroundMusic() {
+//     return (
+//       <audio autoPlay loop>
+//         <source src="song.mp4" type="audio/mp4" />
+//         Your browser does not support the audio element.
+//       </audio>
+//     );
+//   }
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
+      {/* <BackgroundMusic /> */}
       {!showCard ? (
         <button
           className="text-white text-2xl flex flex-col items-center space-y-8 bg-transparent border-4 border-pink-500 rounded p-8 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
