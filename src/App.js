@@ -141,7 +141,7 @@ function BirthdayMessage() {
       ) : (
         <div className={`w-full max-w-6xl bg-gray-900 rounded-lg shadow-2xl overflow-hidden transition-all duration-500 ease-in-out transform ${showCard ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
           <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-12 animate-gradient-x">
-            <h1 className="text-8xl font-bold text-center text-white mb-2 animate-bounce">Aqsa The Butt</h1>
+            <h1 className="text-8xl font-bold text-center text-white mt-6 animate-bounce">Aqsa The Butt</h1>
             <p className="text-6xl text-center text-white animate-pulse">Happy Birthday</p>
           </div>
           
