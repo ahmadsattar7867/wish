@@ -86,7 +86,7 @@ function BirthdayMessage() {
 
   useEffect(() => {
     if (isConfettiActive) {
-      const duration = 15 * 1000;
+      const duration = 500 * 1000;
       const animationEnd = Date.now() + duration;
       const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
@@ -119,8 +119,8 @@ function BirthdayMessage() {
   const handleGiftClick = () => {
     setShowCard(true);
     setIsConfettiActive(true);
-    setTimeout(() => setShowImageCards(true), 1000);
-    setTimeout(() => setShowSecondGift(true), 3000);
+    setTimeout(() => setShowImageCards(true), 3000);
+    setTimeout(() => setShowSecondGift(true), 8000);
   };
 
   const handleSecondGiftClick = () => {
@@ -132,17 +132,17 @@ function BirthdayMessage() {
     <div className="min-h-screen flex items-center justify-center p-4">
       {!showCard ? (
         <button 
-          className="text-white text-2xl flex flex-col items-center space-y-4 bg-transparent border-4 border-pink-500 rounded p-8 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+          className="text-white text-2xl flex flex-col items-center space-y-8 bg-transparent border-4 border-pink-500 rounded p-8 transition-all duration-300 hover:scale-110 hover:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
           onClick={handleGiftClick}
         >
           <FaGift className="text-8xl text-pink-500" />
           <span>Welcome To Ahmad's <br /> First Live Application</span>
         </button>
       ) : (
-        <div className={`w-full max-w-4xl bg-gray-900 rounded-lg shadow-2xl overflow-hidden transition-all duration-500 ease-in-out transform ${showCard ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
-          <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-6 animate-gradient-x">
+        <div className={`w-full max-w-6xl bg-gray-900 rounded-lg shadow-2xl overflow-hidden transition-all duration-500 ease-in-out transform ${showCard ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+          <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-12 animate-gradient-x">
             <h1 className="text-8xl font-bold text-center text-white mb-2 animate-bounce">Aqsa The Butt</h1>
-            <p className="text-6xl text-center text-white animate-pulse">Happiest Birthday</p>
+            <p className="text-6xl text-center text-white animate-pulse">Happy Birthday</p>
           </div>
           
           {showImageCards && (
@@ -230,7 +230,7 @@ function BirthdayMessage() {
                 }}
                 className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50"
               >
-                {showFullMessage ? "Show Sections" : "Read Full Message"}
+                {/* {showFullMessage ? "Show Sections" : "Read Full Message"} */}
               </button>
             </div>
           )}
